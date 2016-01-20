@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Antonranestam/elastic-donut/issues"
   },
-  "homepage": "https://github.com/Antonranestam/elastic-donut#readme"
+  "homepage": "https://github.com/Antonranestam/elastic-donut#readme",
+  "dependencies": {
+    "hapi": "^12.1.0",
+    "inert": "^3.2.0"
+  }
 }
