@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Antonranestam/elastic-donut#readme",
   "dependencies": {
     "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
     "angular-route": "^1.4.8",
     "hapi": "^12.1.0",
     "inert": "^3.2.0"
