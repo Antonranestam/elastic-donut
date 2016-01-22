@@ -9,13 +9,13 @@ const gutil = require('gulp-util')
 // Browserify
 const b = browserify({
   basedir: './public',
-  entries: './app.js',
+  entries: './index.js',
   cache: {},
   packageCache: {},
-  debug: true
+  debug: false
 })
 
-b.transform(babelify, { presets: ['es2015'] })
+b.transform(babelify, { presets: ['es2015'], plugins: ['transform-decorators-legacy', 'angular2-annotations'] })
 b.transform(shim, { global: true })
 
 // Bundle browserify

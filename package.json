@@ -17,13 +17,16 @@
   },
   "homepage": "https://github.com/Antonranestam/elastic-donut#readme",
   "dependencies": {
-    "angular": "^1.4.8",
-    "angular-animate": "^1.4.8",
-    "angular-route": "^1.4.8",
+    "angular2": "^2.0.0-beta.1",
     "hapi": "^12.1.0",
-    "inert": "^3.2.0"
+    "inert": "^3.2.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "^5.0.0-beta.1",
+    "zone.js": "^0.5.10"
   },
   "devDependencies": {
+    "babel-plugin-angular2-annotations": "^5.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
