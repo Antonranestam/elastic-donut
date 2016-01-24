@@ -16,7 +16,7 @@ const b = browserify({
   debug: false
 })
 
-b.transform(babelify, { presets: ['es2015'], plugins: ['transform-decorators-legacy', 'angular2-annotations'] })
+b.transform(babelify)
 b.transform(shim, { global: true })
 
 // Bundle browserify
