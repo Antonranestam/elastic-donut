@@ -20,7 +20,7 @@ b.transform(babelify)
 b.transform(shim, { global: true })
 
 // Bundle browserify
-function bundle() {
+function bundle () {
   // Generate environment file
   var contents = '{ \"env\": \"' + process.env.NODE_ENV + '\" }'
   file('.env.json', contents)
@@ -41,13 +41,13 @@ gulp.task('browserify', function () {
 
 // Watch .scss and .js
 gulp.task('watch', function () {
-  b.plugin(watchify);
-  b.on('update', bundle);
+  b.plugin(watchify)
+  b.on('update', bundle)
   b.on('log', function (msg) {
     gutil.log('Browserify build - ' + msg)
   })
   bundle()
-});
+})
 
 // Set default task
 gulp.task('default', ['watch'])
