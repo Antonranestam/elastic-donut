@@ -5,6 +5,7 @@ const shim = require('browserify-shim')
 const babelify = require('babelify')
 const source = require('vinyl-source-stream')
 const gutil = require('gulp-util')
+const file = require('gulp-file')
 
 // Browserify
 const b = browserify({
@@ -20,6 +21,11 @@ b.transform(shim, { global: true })
 
 // Bundle browserify
 function bundle() {
+  // Generate environment file
+  var contents = '{ \"env\": \"' + process.env.NODE_ENV + '\" }'
+  file('.env.json', contents)
+  .pipe(gulp.dest('./public'))
+
   return b.bundle()
     .on('error', function (err) {
       gutil.log(gutil.colors.red('Browserify build error:\n') + err.message)
