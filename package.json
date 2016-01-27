@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Antonranestam/elastic-donut#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.1",
+    "dotenv": "^2.0.0",
     "hapi": "^12.1.0",
     "inert": "^3.2.0",
     "reflect-metadata": "^0.1.3",

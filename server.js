@@ -1,5 +1,7 @@
 'use strict'
 
+require('dotenv').config()
+
 const Hapi = require('hapi')
 const Inert = require('inert')
 const path = require('path')
@@ -41,8 +43,8 @@ function startServer (conn) {
 
 // Connect to db
 r.connect({
-  host: '',
-  port: 0,
-  db: '',
-  authKey: ''
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  db: process.env.DB_NAME,
+  authKey: process.env.DB_AUTH
 }).then((conn) => startServer(conn))
