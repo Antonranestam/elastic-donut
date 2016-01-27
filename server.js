@@ -1,6 +1,9 @@
+'use strict'
+
 const Hapi = require('hapi')
 const Inert = require('inert')
 const path = require('path')
+const r = require('rethinkdb')
 
 const server = new Hapi.Server({
   connections: {
@@ -28,6 +31,18 @@ server.route({
   }
 })
 
-server.start(() => {
-  console.log('Server running at port:', server.info.port)
-})
+function startServer (conn) {
+  server.decorate('request', 'dbConn', conn)
+
+  server.start(() => {
+    console.log('Server running at port:', server.info.port)
+  })
+}
+
+// Connect to db
+r.connect({
+  host: '',
+  port: 0,
+  db: '',
+  authKey: ''
+}).then((conn) => startServer(conn))
