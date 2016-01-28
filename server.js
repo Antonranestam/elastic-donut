@@ -7,6 +7,8 @@ const Inert = require('inert')
 const path = require('path')
 const r = require('rethinkdb')
 
+const airport = require('./api/airport')
+
 const server = new Hapi.Server({
   connections: {
     routes: {
@@ -32,6 +34,9 @@ server.route({
     }
   }
 })
+
+const APIRoutes = [].concat(airport.routes)
+server.route(APIRoutes)
 
 function startServer (conn) {
   server.decorate('request', 'dbConn', conn)
