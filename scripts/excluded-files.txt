@@ -5,4 +5,4 @@ node_modules
 .travis.yml
 scripts
 public/dist
-public/.env.json
+public/.node_env.json

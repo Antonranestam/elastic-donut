@@ -6,7 +6,7 @@ import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angula
 import ElasticDonut from './app/app'
 import envConfig from './app/app.env'
 
-const ENV = require('./.env.json').env || 'production'
+const ENV = require('./.node_env.json').node_env || 'production'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Run specific environment settings

@@ -22,8 +22,8 @@ b.transform(shim, { global: true })
 // Bundle browserify
 function bundle () {
   // Generate environment file
-  var contents = '{ \"env\": \"' + process.env.NODE_ENV + '\" }'
-  file('.env.json', contents)
+  var contents = '{ \"node_env\": \"' + process.env.NODE_ENV + '\" }'
+  file('.node_env.json', contents)
   .pipe(gulp.dest('./public'))
 
   return b.bundle()
