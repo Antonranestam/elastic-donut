@@ -3,6 +3,7 @@ node_js:
   - "4.2"
 before_install:
   - openssl aes-256-cbc -K $encrypted_cef7aeeb76ec_key -iv $encrypted_cef7aeeb76ec_iv -in donut.pem.enc -out donut.pem -d
+  - npm install -g tsd
 deploy:
   provider: script
   script: scripts/deploy.sh
