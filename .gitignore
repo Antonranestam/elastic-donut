@@ -1,5 +1,5 @@
 node_modules
 public/dist
-public/.node_env.json
+public/.donut_env.json
 .env
 donut.pem
