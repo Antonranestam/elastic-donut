@@ -9,23 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Antonranestam/elastic-donut.git"
+    "url": "git+https://github.com/oddhill/elastic-donut.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Antonranestam/elastic-donut/issues"
+    "url": "https://github.com/oddhill/elastic-donut/issues"
   },
-  "homepage": "https://github.com/Antonranestam/elastic-donut#readme",
+  "homepage": "https://github.com/oddhill/elastic-donut#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.1",
     "dotenv": "^2.0.0",
     "hapi": "^12.1.0",
     "inert": "^3.2.0",
-    "reflect-metadata": "^0.1.3",
+    "reflect-metadata": "0.1.3",
     "rethinkdb": "^2.2.1",
-    "rxjs": "^5.0.0-beta.1",
-    "zone.js": "^0.5.10"
+    "rxjs": "5.0.0-beta.1",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
