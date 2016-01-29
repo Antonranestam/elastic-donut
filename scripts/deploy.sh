@@ -1,6 +1,6 @@
 pwd
-ls
+ls -al
 echo 'Deploying...'
-rsync -rave 'ssh -i ./donut.pem -o StrictHostKeyChecking=no' -av --exclude-from './scripts/excluded-files.txt' ./ donut@icepick.xn--q9jyb4c:/home/donut/nodes/elastic-donut
+rsync -rave 'ssh -i .travis/donut.pem -o StrictHostKeyChecking=no' -av --exclude-from './scripts/excluded-files.txt' ./ donut@icepick.xn--q9jyb4c:/home/donut/nodes/elastic-donut
 echo 'Building...'
-ssh -i ./donut.pem -o StrictHostKeyChecking=no donut@icepick.xn--q9jyb4c 'cd /home/donut/nodes/elastic-donut && npm install && npm run build && pm2 restart donut'
+ssh -i .travis/donut.pem -o StrictHostKeyChecking=no donut@icepick.xn--q9jyb4c 'cd /home/donut/nodes/elastic-donut && npm install && npm run build && pm2 restart donut'
