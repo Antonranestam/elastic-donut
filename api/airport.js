@@ -1,6 +1,7 @@
 'use strict'
 
 const r = require('rethinkdb')
+const diacritics = require('diacritics')
 
 let airport
 
@@ -22,14 +23,19 @@ class Airport {
   search (term) {
     const self = this
 
+    // Remove accents and lowercase it
+    term = diacritics.remove(term.toLowerCase())
+
     let lastChar = term.slice(-1)
     let termBetween = term.slice(0, -1) + String.fromCharCode(lastChar.charCodeAt(0) + 1)
 
     return r.table('airports_search')
-      .between(term.toLowerCase(), termBetween.toLowerCase(), { index: 'term' })
+      .between(term, termBetween, { index: 'term' })
       .limit(10)
       .eqJoin('airportId', r.table('airports'))
       .zip()
+      .without(['id', 'term'])
+      .distinct()
       .run(self.conn)
       .then((cursor) => {
         return cursor.toArray()
