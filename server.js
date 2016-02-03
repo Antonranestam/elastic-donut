@@ -7,7 +7,7 @@ const Inert = require('inert')
 const path = require('path')
 const r = require('rethinkdb')
 
-const airport = require('./api/airport')
+const airport = require('./api/Airport')
 
 const server = new Hapi.Server({
   connections: {
