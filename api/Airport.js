@@ -10,10 +10,14 @@ class Airport {
     this.conn = conn
   }
 
-  get () {
+  get (iata) {
     const self = this
 
     return r.table('airports')
+      .filter(function (airport) {
+        if (iata) return airport('iata').eq(iata.toUpperCase())
+        return airport
+      })
       .run(self.conn)
       .then((cursor) => {
         return cursor.toArray()
@@ -51,9 +55,9 @@ class Airport {
 exports.routes = [
   {
     method: 'GET',
-    path: '/api/airport/get',
+    path: '/api/airport/get/{iata?}',
     handler: (req, reply) => {
-      airport.get()
+      airport.get(req.params.iata)
         .then((result) => reply(result))
     },
     config: {
