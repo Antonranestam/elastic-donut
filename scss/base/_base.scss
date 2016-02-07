@@ -7,14 +7,6 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-// Set HTML to 62.5% to make it easier setting REM/EM values
-// Now it calculates from 10 instead of regular 16.
-// Example 1rem = 10px
-html {
-  font-size: 62.5%;
-  min-height: 100%;
-}
-
 // Remove subpixels from webkit browsers and FF
 // Remove webkit standard input, form, select & button styling on smartdevices
 input,
@@ -35,16 +27,13 @@ button,
 .header-intro {
   width: 100%;
   height: 100vh;
+  margin-bottom: 32px;
 
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-  }
-
-  .split-one {
-    @include animationKeyframe(one-left, 30s, $iteration-count: infinite);
   }
 
   .split-three {
@@ -70,15 +59,6 @@ button,
 
 .wrapper {
   @include outer-container();
-}
-
-@-webkit-keyframes one-left {
-  0% {
-    -webkit-transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-50px);
-  }
 }
 
 @-webkit-keyframes two-left {

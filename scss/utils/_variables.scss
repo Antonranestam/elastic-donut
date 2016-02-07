@@ -4,14 +4,15 @@ $gutter: golden-ratio(20px, 1);
 $max-width: 1180px;
 
 // Base font-size and line-height
-$base-font-size: 1em;
+$base-font-size: 1.125em;
 $base-line-height: 1.45;
 
 // Visual grid that can be used if neat helpers is activated
 // $visual-grid : true;
 // $visual-grid-color: #e0eef7;
 
-$base-color: #333;
+$base-color: #2e2b2f;
+$base-hr: #dbdbdb;
 
 // Fonts
 $futura-medium:'Futura LT W01 Medium';
