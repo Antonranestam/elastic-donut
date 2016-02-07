@@ -30,7 +30,3 @@ button,
 [type=submit] {
   border: 0;
 }
-
-body {
-  @include font-size();
-}

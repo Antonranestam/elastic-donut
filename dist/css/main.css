@@ -379,23 +379,23 @@ button,
 [type=submit] {
   border: 0; }
 
-body {
-  font-size: 10empx;
-  font-size: 1emrem;
-  line-height: 14.5empx; }
-
 html {
   font-size: 1em; }
 
 body {
   font-weight: 400;
   line-height: 1.45;
-  color: #333; }
+  color: #333;
+  font-family: "Bodoni W01 Book_709611"; }
 
 p {
   margin-bottom: 1.3em; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Futura LT W01 Bold";
   margin: 1.414em 0 .5em;
   line-height: 1.2; }
 
