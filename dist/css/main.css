@@ -379,6 +379,73 @@ button,
 [type=submit] {
   border: 0; }
 
+.header-intro {
+  width: 100%;
+  height: 100vh; }
+  .header-intro img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .header-intro .split-one {
+    -webkit-animation: one-left 30s 0s ease-in-out infinite normal;
+    -moz-animation: one-left 30s 0s ease-in-out infinite normal;
+    -o-animation: one-left 30s 0s ease-in-out infinite normal;
+    animation: one-left 30s 0s ease-in-out infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .header-intro .split-three {
+    -webkit-animation: three-left 60s 0s ease-in-out infinite normal;
+    -moz-animation: three-left 60s 0s ease-in-out infinite normal;
+    -o-animation: three-left 60s 0s ease-in-out infinite normal;
+    animation: three-left 60s 0s ease-in-out infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .header-intro .split-four {
+    -webkit-animation: four-left 80s 0s ease-in-out infinite normal;
+    -moz-animation: four-left 80s 0s ease-in-out infinite normal;
+    -o-animation: four-left 80s 0s ease-in-out infinite normal;
+    animation: four-left 80s 0s ease-in-out infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .header-intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-transform: uppercase;
+    z-index: 10;
+    text-align: center; }
+
+.wrapper {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+@-webkit-keyframes one-left {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(-50px); } }
+
+@-webkit-keyframes two-left {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(-100%); } }
+
+@-webkit-keyframes three-left {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(-100%); } }
+
 html {
   font-size: 1em; }
 
