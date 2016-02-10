@@ -385,17 +385,17 @@ button,
     height: 100%;
     position: absolute; }
   .header-intro .split-three {
-    -webkit-animation: three-left 60s 0s ease-in-out infinite normal;
-    -moz-animation: three-left 60s 0s ease-in-out infinite normal;
-    -o-animation: three-left 60s 0s ease-in-out infinite normal;
-    animation: three-left 60s 0s ease-in-out infinite normal;
+    -webkit-animation: three-left 60s 0s linear infinite normal;
+    -moz-animation: three-left 60s 0s linear infinite normal;
+    -o-animation: three-left 60s 0s linear infinite normal;
+    animation: three-left 60s 0s linear infinite normal;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .header-intro .split-four {
-    -webkit-animation: four-left 80s 0s ease-in-out infinite normal;
-    -moz-animation: four-left 80s 0s ease-in-out infinite normal;
-    -o-animation: four-left 80s 0s ease-in-out infinite normal;
-    animation: four-left 80s 0s ease-in-out infinite normal;
+    -webkit-animation: four-left 80s 0s linear infinite normal;
+    -moz-animation: four-left 80s 0s linear infinite normal;
+    -o-animation: four-left 80s 0s linear infinite normal;
+    animation: four-left 80s 0s linear infinite normal;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .header-intro h1 {
@@ -431,7 +431,7 @@ button,
     -webkit-transform: translateX(-100%); } }
 
 html {
-  font-size: 1.125em; }
+  font-size: 18px; }
 
 body {
   font-weight: 400;
@@ -440,13 +440,13 @@ body {
   font-family: "Bodoni W01 Book_709611"; }
 
 p {
-  margin-bottom: 1.3em; }
+  margin-bottom: 20px; }
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 1.414em 0 .5em;
+  margin: 23px 0 8px;
   font-weight: inherit;
   line-height: 1.2;
   font-family: "Futura LT W01 Bold";
@@ -454,19 +454,19 @@ h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.998em; }
+  font-size: 63px; }
 
 h2 {
-  font-size: 2.827em; }
+  font-size: 45px; }
 
 h3 {
-  font-size: 1.999em; }
+  font-size: 32px; }
 
 h4 {
-  font-size: 1.414em; }
+  font-size: 18px; }
 
 small {
-  font-size: .707em; }
+  font-size: 12px; }
 
 hr {
   border: 0;

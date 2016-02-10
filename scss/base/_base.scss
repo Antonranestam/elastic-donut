@@ -37,11 +37,11 @@ button,
   }
 
   .split-three {
-    @include animationKeyframe(three-left, 60s, $iteration-count: infinite);
+    @include animationKeyframe(three-left, 60s, $timing: $linear, $iteration-count: infinite);
   }
 
   .split-four {
-    @include animationKeyframe(four-left, 80s, $iteration-count: infinite);
+    @include animationKeyframe(four-left, 80s, $timing: $linear, $iteration-count: infinite);
   }
 
   h1 {
