@@ -1,0 +1,80 @@
+// General resets
+// Remove subpixels from webkit browsers and FF
+// Remove tap highlight color for webkit touch browsers.
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Remove subpixels from webkit browsers and FF
+// Remove webkit standard input, form, select & button styling on smartdevices
+input,
+form,
+select,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Remove standard border on button & input on smart devices
+button,
+[type=submit] {
+  border: 0;
+}
+
+// Styleguide header
+.header-intro {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 32px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .split-three {
+    @include animationKeyframe(three-left, 60s, $timing: $linear, $iteration-count: infinite);
+  }
+
+  .split-four {
+    @include animationKeyframe(four-left, 80s, $timing: $linear, $iteration-count: infinite);
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-transform: uppercase;
+    z-index: 10;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  @include outer-container();
+}
+
+@-webkit-keyframes two-left {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+   -webkit-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes three-left {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+   -webkit-transform: translateX(-100%);
+  }
+}
