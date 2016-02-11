@@ -375,61 +375,6 @@ button,
 [type=submit] {
   border: 0; }
 
-.header-intro {
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 32px; }
-  .header-intro img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute; }
-  .header-intro .split-three {
-    -webkit-animation: three-left 60s 0s linear infinite normal;
-    -moz-animation: three-left 60s 0s linear infinite normal;
-    -o-animation: three-left 60s 0s linear infinite normal;
-    animation: three-left 60s 0s linear infinite normal;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
-  .header-intro .split-four {
-    -webkit-animation: four-left 80s 0s linear infinite normal;
-    -moz-animation: four-left 80s 0s linear infinite normal;
-    -o-animation: four-left 80s 0s linear infinite normal;
-    animation: four-left 80s 0s linear infinite normal;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
-  .header-intro h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    transform: translateX(-50%) translateY(-50%);
-    color: white;
-    text-transform: uppercase;
-    z-index: 10;
-    text-align: center; }
-
-.wrapper {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto; }
-  .wrapper::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-@-webkit-keyframes two-left {
-  0% {
-    -webkit-transform: translateX(0%); }
-  100% {
-    -webkit-transform: translateX(-100%); } }
-
-@-webkit-keyframes three-left {
-  0% {
-    -webkit-transform: translateX(0%); }
-  100% {
-    -webkit-transform: translateX(-100%); } }
-
 html {
   font-size: 18px; }
 
@@ -473,3 +418,34 @@ hr {
   height: 1px;
   background-color: #dbdbdb;
   margin: 35px 0 25px; }
+
+/* No files to import found in layout//**/
+/* */
+/* No files to import found in components//**/
+/* */
+.slide {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 32px; }
+  .slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .slide .split-three {
+    -webkit-animation: three-left 60s 0s linear infinite normal;
+    -moz-animation: three-left 60s 0s linear infinite normal;
+    -o-animation: three-left 60s 0s linear infinite normal;
+    animation: three-left 60s 0s linear infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .slide .split-four {
+    -webkit-animation: four-left 80s 0s linear infinite normal;
+    -moz-animation: four-left 80s 0s linear infinite normal;
+    -o-animation: four-left 80s 0s linear infinite normal;
+    animation: four-left 80s 0s linear infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+/* No files to import found in content//**/
+/* */

@@ -1,0 +1,21 @@
+// Styleguide header
+.slide {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 32px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .split-three {
+    @include animationKeyframe(three-left, 60s, $timing: $linear, $iteration-count: infinite);
+  }
+
+  .split-four {
+    @include animationKeyframe(four-left, 80s, $timing: $linear, $iteration-count: infinite);
+  }
+}
