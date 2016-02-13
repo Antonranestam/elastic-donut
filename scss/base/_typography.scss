@@ -54,6 +54,12 @@ hr {
   margin: 35px 0 25px;
 }
 
+.small-label {
+  @include font-size($small, 1);
+  font-family: $futura-medium;
+  color: $dark;
+}
+
 em,
 i {
 

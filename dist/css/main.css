@@ -420,6 +420,13 @@ hr {
   background-color: #dbdbdb;
   margin: 35px 0 25px; }
 
+.small-label {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 12px;
+  font-family: "Futura LT W01 Medium";
+  color: #303030; }
+
 @keyframes two-left {
   0% {
     -webkit-transform: translateX(0%); }
@@ -437,7 +444,33 @@ hr {
 .filter__button {
   background-color: #fff;
   outline: 0;
-  display: block; }
+  display: block;
+  padding: 17px 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #dce2e4;
+  width: 100%; }
+  .filter__button h4 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 26px;
+    margin: 0;
+    color: #a82af0; }
+
+.filter__button--search {
+  background-color: #a82af0;
+  outline: 0;
+  display: block;
+  padding: 15px 15px 20px;
+  text-align: left;
+  height: 90px;
+  width: 100%; }
+  .filter__button--search:after {
+    background: url("../../graphics/sprite.png") transparent 0 0 no-repeat;
+    background: none, url("../../graphics/sprite.svg") transparent 0 0 no-repeat;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px; }
 
 .filter-nav {
   position: absolute;
@@ -462,7 +495,8 @@ hr {
   position: absolute;
   right: 25px;
   top: 50%;
-  z-index: 1; }
+  z-index: 1;
+  width: 90px; }
 
 .slide {
   width: 100%;

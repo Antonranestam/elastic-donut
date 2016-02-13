@@ -2,4 +2,14 @@
   background-color: $white;
   outline: 0;
   display: block;
+  padding: 17px 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid $light-hr;
+  width: 100%;
+
+  h4 {
+    @include font-size($filter-text, 1);
+    margin: 0;
+    color: $purple;
+  }
 }

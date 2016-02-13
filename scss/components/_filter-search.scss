@@ -1,0 +1,17 @@
+.filter__button--search {
+  background-color: $purple;
+  outline: 0;
+  display: block;
+  padding: 15px 15px 20px;
+  text-align: left;
+  height: 90px;
+  width: 100%;
+
+  &:after {
+    @include svg-bg(sprite);
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+}
