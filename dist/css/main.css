@@ -434,15 +434,18 @@ hr {
 
 /* No files to import found in layout//**/
 /* */
-/* No files to import found in components//**/
-/* */
+.filter__button {
+  background-color: #fff;
+  outline: 0;
+  display: block; }
+
 .filter-nav {
   position: absolute;
   top: 10px;
   left: 25px;
   right: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 10px 0;
+  padding: 10px 0 15px;
   z-index: 10;
   color: #fff; }
   .filter-nav p {
@@ -500,7 +503,13 @@ hr {
     font-size: 18rem;
     line-height: 180px;
     display: block;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    background-position: 70% 90%;
+    background-blend-mode: overlay; }
 
 /* No files to import found in content//**/
 /* */

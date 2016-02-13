@@ -2,7 +2,7 @@
 .slide {
   width: 100%;
   height: 100vh;
-  
+
   img {
     object-fit: cover;
     width: 100%;
@@ -31,5 +31,11 @@
     @include font-size($big-title, 1);
     display: block;
     letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    background-position: 70% 90%;
+    background-blend-mode: overlay;
   }
 }
