@@ -1,0 +1,16 @@
+.filter-nav {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  right: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, .6);
+  padding: 10px 0;
+  z-index: 10;
+  color: $white;
+
+  p {
+    margin: 0;
+    font-family: $futura-medium;
+    text-transform: uppercase;
+  }
+}
