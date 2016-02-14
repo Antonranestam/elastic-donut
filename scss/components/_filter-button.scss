@@ -1,4 +1,5 @@
 .filter__button {
+  @include animate-object();
   background-color: $white;
   outline: 0;
   display: block;
@@ -6,6 +7,10 @@
   text-align: left;
   border-bottom: 1px solid $light-hr;
   width: 100%;
+
+  &:hover {
+    background-color: darken($white, 3%);
+  }
 
   h4 {
     @include font-size($filter-text, 1);

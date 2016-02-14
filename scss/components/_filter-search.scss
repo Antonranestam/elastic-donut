@@ -1,17 +1,23 @@
 .filter__button--search {
+  @include animate-object();
   background-color: $purple;
   outline: 0;
   display: block;
-  padding: 15px 15px 20px;
+  padding: 15px;
   text-align: left;
   height: 90px;
   width: 100%;
 
+  &:hover {
+    background-color: darken($purple, 5%);
+  }
+
   &:after {
-    @include svg-bg(sprite);
+    @include svg-bg(sprite, $background-position: -128px 0);
     content: '';
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
   }
 }

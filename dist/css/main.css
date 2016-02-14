@@ -442,6 +442,11 @@ hr {
 /* No files to import found in layout//**/
 /* */
 .filter__button {
+  -webkit-transition: all 0.3s 0s ease-in-out;
+  -moz-transition: all 0.3s 0s ease-in-out;
+  -ms-transition: all 0.3s 0s ease-in-out;
+  -o-transition: all 0.3s 0s ease-in-out;
+  transition: all 0.3s 0s ease-in-out;
   background-color: #fff;
   outline: 0;
   display: block;
@@ -449,6 +454,8 @@ hr {
   text-align: left;
   border-bottom: 1px solid #dce2e4;
   width: 100%; }
+  .filter__button:hover {
+    background-color: #f7f7f7; }
   .filter__button h4 {
     font-size: 26px;
     font-size: 2.6rem;
@@ -457,20 +464,28 @@ hr {
     color: #a82af0; }
 
 .filter__button--search {
+  -webkit-transition: all 0.3s 0s ease-in-out;
+  -moz-transition: all 0.3s 0s ease-in-out;
+  -ms-transition: all 0.3s 0s ease-in-out;
+  -o-transition: all 0.3s 0s ease-in-out;
+  transition: all 0.3s 0s ease-in-out;
   background-color: #a82af0;
   outline: 0;
   display: block;
-  padding: 15px 15px 20px;
+  padding: 15px;
   text-align: left;
   height: 90px;
   width: 100%; }
+  .filter__button--search:hover {
+    background-color: #9e12ee; }
   .filter__button--search:after {
-    background: url("../../graphics/sprite.png") transparent 0 0 no-repeat;
-    background: none, url("../../graphics/sprite.svg") transparent 0 0 no-repeat;
+    background: url("../../graphics/sprite.png") transparent -128px 0 no-repeat;
+    background: none, url("../../graphics/sprite.svg") transparent -128px 0 no-repeat;
     content: '';
     display: block;
-    width: 25px;
-    height: 25px; }
+    width: 26px;
+    height: 26px;
+    margin: 0 auto; }
 
 .filter-nav {
   position: absolute;
