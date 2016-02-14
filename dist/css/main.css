@@ -511,7 +511,8 @@ hr {
   right: 25px;
   top: 50%;
   z-index: 1;
-  width: 90px; }
+  width: 90px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
 
 .slide {
   width: 100%;
