@@ -1,0 +1,33 @@
+.select {
+  @include font-size($input-text, 1);
+  padding: 15px 10px;
+  border: 3px solid $purple;
+  font-family: $futura-medium;
+  text-align: left;
+  border-radius: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: lighten($purple, 10%);
+  display: block;
+  
+  &:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    outline: 0;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+
+  &:after {
+    @include svg-bg(sprite, $background-position: 0 -100px);
+    width: 14px;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+}

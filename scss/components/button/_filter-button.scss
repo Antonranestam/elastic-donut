@@ -18,3 +18,16 @@
     color: $purple;
   }
 }
+
+// Popupo from filter button
+.filter__button__popup {
+  position: absolute;
+  left: -360px;
+  width: 360px;
+  top: 0;
+  bottom: 0;
+  background: $white;
+  border-right: 1px solid $light-hr;
+  padding: 50px;
+  text-align: center;
+}

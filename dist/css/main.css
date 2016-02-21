@@ -380,7 +380,7 @@ html {
 
 body {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8;
   line-height: 1.45;
   color: #2e2b2f;
   font-family: "Bodoni W01 Book_709611"; }
@@ -441,6 +441,14 @@ hr {
 
 /* No files to import found in layout//**/
 /* */
+:disabled {
+  opacity: .2;
+  cursor: not-allowed; }
+
+.disabled * {
+  opacity: .4;
+  cursor: not-allowed; }
+
 .filter__button {
   -webkit-transition: all 0.3s 0s ease-in-out;
   -moz-transition: all 0.3s 0s ease-in-out;
@@ -462,6 +470,17 @@ hr {
     line-height: 26px;
     margin: 0;
     color: #a82af0; }
+
+.filter__button__popup {
+  position: absolute;
+  left: -360px;
+  width: 360px;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  border-right: 1px solid #dce2e4;
+  padding: 50px;
+  text-align: center; }
 
 .filter__button--search {
   -webkit-transition: all 0.3s 0s ease-in-out;
@@ -486,6 +505,48 @@ hr {
     width: 26px;
     height: 26px;
     margin: 0 auto; }
+
+.select {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  padding: 15px 10px;
+  border: 3px solid #a82af0;
+  font-family: "Futura LT W01 Medium";
+  text-align: left;
+  border-radius: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: #bb5af3;
+  display: block; }
+  .select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: 0; }
+
+.select-wrapper {
+  position: relative; }
+  .select-wrapper:after {
+    background: url("../../graphics/sprite.png") transparent 0 -100px no-repeat;
+    background: none, url("../../graphics/sprite.svg") transparent 0 -100px no-repeat;
+    width: 14px;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px; }
+
+.filter__button__popup__graphic-one {
+  background: url("../../graphics/sprite.png") transparent 0 0 no-repeat;
+  background: none, url("../../graphics/sprite.svg") transparent 0 0 no-repeat;
+  width: 78px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 20px; }
+
+.filter__button__popup__inner {
+  margin: 20px 0 0; }
 
 .filter-nav {
   position: absolute;

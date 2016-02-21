@@ -1,0 +1,12 @@
+// Airplane graphic for picker
+.filter__button__popup__graphic-one {
+  @include svg-bg(sprite);
+  width: 78px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.filter__button__popup__inner {
+  margin: 20px 0 0;
+}
