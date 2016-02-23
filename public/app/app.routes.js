@@ -3,5 +3,5 @@ import Destination from '../components/Destination'
 
 export const appRoutes = [
   { path: '/', component: Home, as: 'Home' },
-  { path: '/destination', component: Destination, as: 'Destination' }
+  { path: '/destination/:airport', component: Destination, as: 'Destination' }
 ]
