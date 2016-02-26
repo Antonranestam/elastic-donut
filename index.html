@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="filter-nav">
+  <header class="filter-nav" style="display: none;">
     <p class="filter-nav__indication">Lorem ipsum</p>
   </header>
 
@@ -31,27 +31,66 @@
   </main>
 
   <aside class="filter">
-    <button class="filter__button">
-      <span class="small-label">Depart</span>
-      <h4>CPH</h4>
+    <div class="filter-button-wrapper">
+      <button class="filter__button">
+        <span class="small-label">Depart</span>
+        <h4>CPH</h4>
+      </button>
 
-      <div class="filter__button__popup">
+      <div class="filter__button__popup" style="display: none;">
         <div class="filter__button__popup__inner">
           <span class="filter__button__popup__graphic-one"></span>
 
           <div class="select-wrapper">
-            <span class="select">Pick airport</span>
+            <button class="select">Pick airport</button>
           </div>
         </div>
       </div>
-    </button>
+    </div>
 
-    <button class="filter__button">
-      <span class="small-label">Passanger</span>
-      <h4>2</h4>
-    </button>
+    <div class="filter-button-wrapper">
+      <button class="filter__button">
+        <span class="small-label">Passanger</span>
+        <h4>2</h4>
+      </button>
+    </div>
 
     <button class="filter__button--search"></button>
   </aside>
+
+  <section class="filter__big-alts">
+    <nav>
+      <h3 class="fitler__big-alts__title">Europe</h3>
+      <li class="filter-select">
+        <h4 class="filter-select__title">CPH</h4>
+        <img src="images/airports/cph.jpg" alt="cph">
+        <div class="filter-select__info">Copenhagen Airport</div>
+      </li>
+
+      <li class="filter-select">
+        <h4 class="filter-select__title">CPH</h4>
+        <img src="images/airports/cph.jpg" alt="cph">
+        <div class="filter-select__info">Copenhagen Airport</div>
+      </li>
+
+      <li class="filter-select">
+        <h4 class="filter-select__title">CPH</h4>
+        <img src="images/airports/cph.jpg" alt="cph">
+        <div class="filter-select__info">Copenhagen Airport</div>
+      </li>
+
+      <li class="filter-select selected">
+        <h4 class="filter-select__title">CPH</h4>
+        <img src="images/airports/cph.jpg" alt="cph">
+        <div class="filter-select__info">Copenhagen Airport</div>
+      </li>
+
+      <li class="filter-select">
+        <h4 class="filter-select__title">CPH</h4>
+        <img src="images/airports/cph.jpg" alt="cph">
+        <div class="filter-select__info">Copenhagen Airport</div>
+      </li>
+    </nav>
+  </section>
 </body>
 </html>

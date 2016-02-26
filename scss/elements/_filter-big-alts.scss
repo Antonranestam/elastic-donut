@@ -1,0 +1,104 @@
+// Big select list
+.filter__big-alts {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: 1;
+  overflow: auto;
+  padding: 45px 50px 50px;
+}
+
+// Title
+.fitler__big-alts__title {
+  clear: both;
+  color: $purple;
+  border-bottom: 3px solid $purple;
+  padding: 0 20px 15px 0;
+  display: block;
+  margin: 0 0 20px;
+}
+
+.filter-select {
+  background-color: $purple;
+  border-radius: 5px;
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid $grey-hr;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  float: left;
+  margin: 0 25px 0 0;
+  cursor: pointer;
+
+  &:hover {
+
+    img {
+      opacity: .3;
+    }
+  }
+
+  &:active,
+  &.selected {
+
+    img {
+      opacity: .1;
+    }
+  }
+
+  &.selected {
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  // Checked state graphic
+  &:after {
+    @include svg-bg(sprite, $background-position: 0 -157px);
+    @include transform(translateX(-50%));
+    position: absolute;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    content: '';
+    display: block;
+    z-index: 2;
+    left: 50%;
+    opacity: 0;
+  }
+
+  img {
+    @include animate-object();
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.filter-select__title {
+  @include animate-object();
+  @include transform(translateY(-50%) translateX(-50%));
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: $white;
+  margin: 0;
+  z-index: 2;
+
+  .selected & {
+    top: 50%;
+  }
+}
+
+.filter-select__info {
+  padding: 10px;
+  text-align: center;
+  font-family: $futura-medium;
+  text-transform: uppercase;
+  background-color: $white;
+}
