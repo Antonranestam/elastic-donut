@@ -1,0 +1,51 @@
+.number-picker {
+  border: 3px solid $purple;
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  padding: 15px;
+  color: $purple;
+  text-align: center; 
+
+  &:last-child {
+    margin: 0;
+  }
+
+  h4,
+  h3 {
+    margin: 0;
+  }
+}
+
+.add-sign {
+  @include animate-object();
+  @include font-size(2, 1.2);
+  font-family: $futura-bold;
+  border-radius: 100%;
+  border: 3px solid $purple;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($grey-hr, 5%);
+  }
+}
+
+.min-sign {
+  @include font-size(2, 1.3);
+  font-family: $futura-bold;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  border: 3px solid $purple;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($grey-hr, 5%);
+  }
+}

@@ -1,0 +1,8 @@
+// Passenger graphic for picker
+.filter__button__popup__graphic-two {
+  @include svg-bg(sprite, $background-position: 13px -247px);
+  width: 78px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 20px;
+}

@@ -1,0 +1,10 @@
+.flight-table {
+  background-color: $white;
+  margin: 0 25px;
+  overflow: hidden;
+}
+
+.flight-table__header {
+  padding: 20px;
+  border-bottom: 1px solid $grey-hr;
+}

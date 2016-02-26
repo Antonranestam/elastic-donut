@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header class="filter-nav" style="display: none;">
+
+  <header class="filter-nav">
     <p class="filter-nav__indication">Lorem ipsum</p>
   </header>
 
@@ -27,70 +28,124 @@
   </div>
 
   <main>
+    <aside class="filter">
+      <div class="filter-button-wrapper">
+        <button class="filter__button">
+          <span class="small-label">Depart</span>
+          <h4>CPH</h4>
+        </button>
 
-  </main>
+        <div class="filter__button__popup" style="display: none;">
+          <div class="filter__button__popup__inner">
+            <span class="filter__button__popup__graphic-one"></span>
 
-  <aside class="filter">
-    <div class="filter-button-wrapper">
-      <button class="filter__button">
-        <span class="small-label">Depart</span>
-        <h4>CPH</h4>
-      </button>
-
-      <div class="filter__button__popup" style="display: none;">
-        <div class="filter__button__popup__inner">
-          <span class="filter__button__popup__graphic-one"></span>
-
-          <div class="select-wrapper">
-            <button class="select">Pick airport</button>
+            <div class="select-wrapper">
+              <button class="select">Pick airport</button>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="filter-button-wrapper">
+        <button class="filter__button">
+          <span class="small-label">Passanger</span>
+          <h4>2</h4>
+        </button>
+
+        <div class="filter__button__popup" style="display: none;">
+          <div class="filter__button__popup__inner">
+            <span class="filter__button__popup__graphic-two"></span>
+
+            <div class="number-picker">
+              <h3>4</h3>
+              <h4>Adults</h4>
+
+              <span class="add-sign"> + </span>
+              <span class="min-sign"> - </span>
+            </div>
+
+            <div class="number-picker">
+              <h3>4</h3>
+              <h4>Children</h4>
+
+              <span class="add-sign"> + </span>
+              <span class="min-sign"> - </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="filter__button--search"></button>
+    </aside>
+
+    <section class="filter__big-alts" style="display: none;">
+      <nav>
+        <h3 class="fitler__big-alts__title">Europe</h3>
+        <li class="filter-select">
+          <h4 class="filter-select__title">CPH</h4>
+          <img src="images/airports/cph.jpg" alt="cph">
+          <div class="filter-select__info">Copenhagen Airport</div>
+        </li>
+
+        <li class="filter-select">
+          <h4 class="filter-select__title">CPH</h4>
+          <img src="images/airports/cph.jpg" alt="cph">
+          <div class="filter-select__info">Copenhagen Airport</div>
+        </li>
+
+        <li class="filter-select">
+          <h4 class="filter-select__title">CPH</h4>
+          <img src="images/airports/cph.jpg" alt="cph">
+          <div class="filter-select__info">Copenhagen Airport</div>
+        </li>
+
+        <li class="filter-select selected">
+          <h4 class="filter-select__title">CPH</h4>
+          <img src="images/airports/cph.jpg" alt="cph">
+          <div class="filter-select__info">Copenhagen Airport</div>
+        </li>
+
+        <li class="filter-select">
+          <h4 class="filter-select__title">CPH</h4>
+          <img src="images/airports/cph.jpg" alt="cph">
+          <div class="filter-select__info">Copenhagen Airport</div>
+        </li>
+      </nav>
+    </section>
+
+    <div class="depart-time" style="display: none;">
+      <h1>Departing from
+        <span><a href="#">Copenhagen</a> with <a href="#">2 People</a></span>
+      </h1>
     </div>
 
-    <div class="filter-button-wrapper">
-      <button class="filter__button">
-        <span class="small-label">Passanger</span>
-        <h4>2</h4>
-      </button>
-    </div>
+    <section class="flight-table" style="display: none;">
+      <div class="flight-table__header">
+        <span class="table__header__item table__header__item--left-side">Company</span>
+        <span class="table__header__item">Flight time</span>
+        <span class="table__header__item">Price</span>
+      </div>
 
-    <button class="filter__button--search"></button>
-  </aside>
+      <article class="flight-table__item">
 
-  <section class="filter__big-alts">
-    <nav>
-      <h3 class="fitler__big-alts__title">Europe</h3>
-      <li class="filter-select">
-        <h4 class="filter-select__title">CPH</h4>
-        <img src="images/airports/cph.jpg" alt="cph">
-        <div class="filter-select__info">Copenhagen Airport</div>
-      </li>
+        <div class="flight-table__item__section">
+          <figure class="plane-wing"></figure>
+        </div>
 
-      <li class="filter-select">
-        <h4 class="filter-select__title">CPH</h4>
-        <img src="images/airports/cph.jpg" alt="cph">
-        <div class="filter-select__info">Copenhagen Airport</div>
-      </li>
+        <!-- <div class="flight-table__item__section flight-table__item__section-flight-time">
+        </div>
 
-      <li class="filter-select">
-        <h4 class="filter-select__title">CPH</h4>
-        <img src="images/airports/cph.jpg" alt="cph">
-        <div class="filter-select__info">Copenhagen Airport</div>
-      </li>
+        <div class="flight-table__item__section">
+        </div>
 
-      <li class="filter-select selected">
-        <h4 class="filter-select__title">CPH</h4>
-        <img src="images/airports/cph.jpg" alt="cph">
-        <div class="filter-select__info">Copenhagen Airport</div>
-      </li>
+        <div class="flight-table__item__section">
+        </div>
 
-      <li class="filter-select">
-        <h4 class="filter-select__title">CPH</h4>
-        <img src="images/airports/cph.jpg" alt="cph">
-        <div class="filter-select__info">Copenhagen Airport</div>
-      </li>
-    </nav>
-  </section>
+        <div class="flight-table__item__section">
+          <button class="btn-border"></button>
+        </div> -->
+      </article>
+    </section>
+  </main>
 </body>
 </html>

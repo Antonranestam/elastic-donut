@@ -1,0 +1,21 @@
+.depart-time {
+  margin: 150px 25px 120px;
+  color: $white;
+
+  span {
+    display: block;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  h1 {
+    @include font-size($heading-three, 1.2);
+
+    span {
+      @include font-size($title, 1.2);
+    }
+  }
+}

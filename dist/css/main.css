@@ -441,6 +441,55 @@ hr {
 
 /* No files to import found in layout//**/
 /* */
+.number-picker {
+  border: 3px solid #a82af0;
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  padding: 15px;
+  color: #a82af0;
+  text-align: center; }
+  .number-picker:last-child {
+    margin: 0; }
+  .number-picker h4,
+  .number-picker h3 {
+    margin: 0; }
+
+.add-sign {
+  -webkit-transition: all 0.3s 0s ease-in-out;
+  -moz-transition: all 0.3s 0s ease-in-out;
+  -ms-transition: all 0.3s 0s ease-in-out;
+  -o-transition: all 0.3s 0s ease-in-out;
+  transition: all 0.3s 0s ease-in-out;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 24px;
+  font-family: "Futura LT W01 Bold";
+  border-radius: 100%;
+  border: 3px solid #a82af0;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  cursor: pointer; }
+  .add-sign:hover {
+    background-color: #eeedef; }
+
+.min-sign {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 26px;
+  font-family: "Futura LT W01 Bold";
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  border: 3px solid #a82af0;
+  margin: 5px 5px 0 0;
+  cursor: pointer; }
+  .min-sign:hover {
+    background-color: #eeedef; }
+
 .select {
   font-size: 16px;
   font-size: 1.6rem;
@@ -510,7 +559,7 @@ hr {
   bottom: 0;
   background: #fff;
   border-right: 1px solid #dce2e4;
-  padding: 50px;
+  padding: 25px;
   text-align: center; }
 
 .filter__button--search {
@@ -545,8 +594,22 @@ hr {
   display: block;
   margin: 0 auto 20px; }
 
-.filter__button__popup__inner {
-  margin: 20px 0 0; }
+.depart-time {
+  margin: 150px 25px 120px;
+  color: #fff; }
+  .depart-time span {
+    display: block; }
+  .depart-time a {
+    color: #fff;
+    text-decoration: none; }
+  .depart-time h1 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 38.4px; }
+    .depart-time h1 span {
+      font-size: 63px;
+      font-size: 6.3rem;
+      line-height: 75.6px; }
 
 .filter__big-alts {
   position: fixed;
@@ -641,6 +704,9 @@ hr {
   background-color: #fff; }
 
 .filter-nav {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
   position: absolute;
   top: 10px;
   left: 25px;
@@ -667,6 +733,22 @@ hr {
   width: 90px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
 
+.filter__button__popup__graphic-two {
+  background: url("../../graphics/sprite.png") transparent 13px -247px no-repeat;
+  background: none, url("../../graphics/sprite.svg") transparent 13px -247px no-repeat;
+  width: 78px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 20px; }
+
+.slider {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1; }
+
 .slide {
   width: 100%;
   height: 100vh; }
@@ -675,6 +757,20 @@ hr {
     width: 100%;
     height: 100%;
     position: absolute; }
+  .slide .split-three {
+    -webkit-animation: three-left 60s 0s linear infinite normal;
+    -moz-animation: three-left 60s 0s linear infinite normal;
+    -o-animation: three-left 60s 0s linear infinite normal;
+    animation: three-left 60s 0s linear infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .slide .split-four {
+    -webkit-animation: four-left 80s 0s linear infinite normal;
+    -moz-animation: four-left 80s 0s linear infinite normal;
+    -o-animation: four-left 80s 0s linear infinite normal;
+    animation: four-left 80s 0s linear infinite normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
 
 .slide__title {
   -webkit-transform: translateY(-50%);
@@ -699,6 +795,15 @@ hr {
     -webkit-background-clip: text;
     background-position: 70% 90%;
     background-blend-mode: overlay; }
+
+.flight-table {
+  background-color: #fff;
+  margin: 0 25px;
+  overflow: hidden; }
+
+.flight-table__header {
+  padding: 20px;
+  border-bottom: 1px solid #e1e0e3; }
 
 /* No files to import found in content//**/
 /* */
