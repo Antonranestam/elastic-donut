@@ -595,7 +595,7 @@ hr {
   margin: 0 auto 20px; }
 
 .depart-time {
-  margin: 150px 25px 120px;
+  margin: 150px 25px 100px;
   color: #fff; }
   .depart-time span {
     display: block; }
@@ -757,20 +757,6 @@ hr {
     width: 100%;
     height: 100%;
     position: absolute; }
-  .slide .split-three {
-    -webkit-animation: three-left 60s 0s linear infinite normal;
-    -moz-animation: three-left 60s 0s linear infinite normal;
-    -o-animation: three-left 60s 0s linear infinite normal;
-    animation: three-left 60s 0s linear infinite normal;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
-  .slide .split-four {
-    -webkit-animation: four-left 80s 0s linear infinite normal;
-    -moz-animation: four-left 80s 0s linear infinite normal;
-    -o-animation: four-left 80s 0s linear infinite normal;
-    animation: four-left 80s 0s linear infinite normal;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
 
 .slide__title {
   -webkit-transform: translateY(-50%);

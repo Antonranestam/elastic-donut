@@ -18,13 +18,13 @@
     position: absolute;
   }
 
-  .split-three {
-    @include animationKeyframe(three-left, 60s, $timing: $linear, $iteration-count: infinite);
-  }
-
-  .split-four {
-    @include animationKeyframe(four-left, 80s, $timing: $linear, $iteration-count: infinite);
-  }
+  // .split-three {
+  //   @include animationKeyframe(three-left, 60s, $timing: $linear, $iteration-count: infinite);
+  // }
+  //
+  // .split-four {
+  //   @include animationKeyframe(four-left, 80s, $timing: $linear, $iteration-count: infinite);
+  // }
 }
 
 .slide__title {
