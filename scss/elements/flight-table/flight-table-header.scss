@@ -1,4 +1,20 @@
 .flight-table__header {
-  padding: 20px;
+  padding: 25px 35px;
   border-bottom: 1px solid $grey-hr;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.table__header__item {
+  @include font-size(1.2);
+  flex-grow: 1;
+  font-family: $futura-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $grey;
+
+  &--left-side {
+    flex-grow: 4;
+  }
 }

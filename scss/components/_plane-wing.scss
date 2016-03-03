@@ -1,0 +1,22 @@
+.plane-wing {
+  width: 50px;
+  height: 65px;
+  overflow: hidden;
+  transform-origin: 100% 0;
+  transform: rotateZ(0deg);
+  position: relative;
+  margin: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 65px;
+    background-color: $purple;
+    transform-origin: 100% 100%;
+    transform: skew(24deg);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 0;
+  }
+}

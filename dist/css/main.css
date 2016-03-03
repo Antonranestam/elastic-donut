@@ -490,6 +490,26 @@ hr {
   .min-sign:hover {
     background-color: #eeedef; }
 
+.plane-wing {
+  width: 50px;
+  height: 65px;
+  overflow: hidden;
+  transform-origin: 100% 0;
+  transform: rotateZ(0deg);
+  position: relative;
+  margin: 0; }
+  .plane-wing:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 65px;
+    background-color: #a82af0;
+    transform-origin: 100% 100%;
+    transform: skew(24deg);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 0; }
+
 .select {
   font-size: 16px;
   font-size: 1.6rem;
@@ -782,14 +802,40 @@ hr {
     background-position: 70% 90%;
     background-blend-mode: overlay; }
 
+.flight-table__item {
+  display: flex;
+  padding: 30px; }
+
+.flight-table__item__section {
+  flex-grow: 1; }
+  .flight-table__item__section--plane-wing {
+    flex-grow: 0; }
+  .flight-table__item__section--flight-time {
+    flex-grow: 4; }
+
+.flight-table__header {
+  padding: 25px 35px;
+  border-bottom: 1px solid #e1e0e3;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap; }
+
+.table__header__item {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 17.4px;
+  flex-grow: 1;
+  font-family: "Futura LT W01 Medium";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #909090; }
+  .table__header__item--left-side {
+    flex-grow: 4; }
+
 .flight-table {
   background-color: #fff;
   margin: 0 25px;
   overflow: hidden; }
-
-.flight-table__header {
-  padding: 20px;
-  border-bottom: 1px solid #e1e0e3; }
 
 /* No files to import found in content//**/
 /* */

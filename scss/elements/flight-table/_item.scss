@@ -1,0 +1,16 @@
+.flight-table__item {
+  display: flex;
+  padding: 30px;
+}
+
+.flight-table__item__section {
+  flex-grow: 1;
+
+  &--plane-wing {
+    flex-grow: 0;
+  }
+
+  &--flight-time {
+    flex-grow: 4;
+  }
+}
