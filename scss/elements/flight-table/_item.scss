@@ -5,12 +5,31 @@
 
 .flight-table__item__section {
   flex-grow: 1;
+  padding: 0 10px;
+  border-right: 1px solid $grey-hr;
+  text-align: left;
+
+  &:last-child {
+    border: 0;
+  }
 
   &--plane-wing {
     flex-grow: 0;
   }
 
-  &--flight-time {
+  &--travel {
     flex-grow: 4;
   }
+
+  &--button-wrap {
+    flex-grow: .5;
+  }
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.flight-table__item__section__inner {
+  display: inline-block;
 }

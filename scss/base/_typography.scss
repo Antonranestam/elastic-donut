@@ -60,6 +60,14 @@ hr {
   color: $dark;
 }
 
+.above-label {
+  @include font-size(1, 1);
+  font-family: $futura-medium;
+  color: $grey;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
 em,
 i {
 

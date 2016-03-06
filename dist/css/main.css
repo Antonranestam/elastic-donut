@@ -427,6 +427,15 @@ hr {
   font-family: "Futura LT W01 Medium";
   color: #303030; }
 
+.above-label {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 10px;
+  font-family: "Futura LT W01 Medium";
+  color: #909090;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+
 @keyframes two-left {
   0% {
     -webkit-transform: translateX(0%); }
@@ -507,7 +516,7 @@ hr {
     background-color: #a82af0;
     transform-origin: 100% 100%;
     transform: skew(24deg);
-    border-top-right-radius: 12px;
+    border-top-right-radius: 8px;
     border-top-left-radius: 0; }
 
 .select {
@@ -540,6 +549,26 @@ hr {
     position: absolute;
     right: 15px;
     top: 20px; }
+
+.btn-border {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  -webkit-transition: all 0.3s 0s ease-in-out;
+  -moz-transition: all 0.3s 0s ease-in-out;
+  -ms-transition: all 0.3s 0s ease-in-out;
+  -o-transition: all 0.3s 0s ease-in-out;
+  transition: all 0.3s 0s ease-in-out;
+  border: 3px solid #a82af0;
+  padding: 15px;
+  background-color: transparent;
+  font-family: "Futura LT W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a82af0; }
+  .btn-border:hover, .btn-border:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 0; }
 
 :disabled {
   opacity: .2;
@@ -807,11 +836,23 @@ hr {
   padding: 30px; }
 
 .flight-table__item__section {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 0 10px;
+  border-right: 1px solid #e1e0e3;
+  text-align: left; }
+  .flight-table__item__section:last-child {
+    border: 0; }
   .flight-table__item__section--plane-wing {
     flex-grow: 0; }
-  .flight-table__item__section--flight-time {
+  .flight-table__item__section--travel {
     flex-grow: 4; }
+  .flight-table__item__section--button-wrap {
+    flex-grow: .5; }
+  .flight-table__item__section h4 {
+    margin: 0; }
+
+.flight-table__item__section__inner {
+  display: inline-block; }
 
 .flight-table__header {
   padding: 25px 35px;

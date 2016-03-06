@@ -1,0 +1,17 @@
+.btn-border {
+  @include font-size(1.6, 1);
+  @include animate-object();
+  border: 3px solid $purple;
+  padding: 15px;
+  background-color: transparent;
+  font-family: $futura-bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $purple;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, .1);
+    outline: 0;
+  }
+}
