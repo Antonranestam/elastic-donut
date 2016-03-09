@@ -898,6 +898,14 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #909090; }
+  .table__header__item:after {
+    background: url("../../graphics/sprite.png") transparent -45px -103px no-repeat;
+    background: none, url("../../graphics/sprite.svg") transparent -45px -103px no-repeat;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    content: '';
+    margin: 0 0 0 10px; }
   .table__header__item--left-side {
     flex-grow: 4; }
 

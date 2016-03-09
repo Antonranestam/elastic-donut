@@ -20,6 +20,15 @@
   letter-spacing: 1px;
   color: $grey;
 
+  &:after {
+    @include svg-bg(sprite, $background-position: -45px -103px);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    content: '';
+    margin: 0 0 0 10px;
+  }
+
   &--left-side {
     flex-grow: 4;
   }
