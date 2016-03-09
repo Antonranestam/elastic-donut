@@ -1,4 +1,4 @@
-@keyframes two-left {
+@keyframes four-left {
   0% {
     -webkit-transform: translateX(0%);
   }
@@ -15,5 +15,26 @@
 
   100% {
     -webkit-transform: translateX(-100%);
+  }
+}
+
+
+@keyframes glide-loader {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(500px);
+  }
+}
+
+@keyframes glide-background {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100px);
   }
 }

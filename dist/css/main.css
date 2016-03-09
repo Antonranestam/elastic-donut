@@ -436,7 +436,7 @@ hr {
   text-transform: uppercase;
   letter-spacing: .5px; }
 
-@keyframes two-left {
+@keyframes four-left {
   0% {
     -webkit-transform: translateX(0%); }
   100% {
@@ -447,6 +447,18 @@ hr {
     -webkit-transform: translateX(0%); }
   100% {
     -webkit-transform: translateX(-100%); } }
+
+@keyframes glide-loader {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(500px); } }
+
+@keyframes glide-background {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(100px); } }
 
 /* No files to import found in layout//**/
 /* */
@@ -796,6 +808,41 @@ hr {
   z-index: 2;
   width: 90px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
+
+.loader {
+  overflow: hidden; }
+
+.loader__window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 1; }
+
+.loader__clouds {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-animation: glide-loader 60s 0s linear infinite normal;
+  -moz-animation: glide-loader 60s 0s linear infinite normal;
+  -o-animation: glide-loader 60s 0s linear infinite normal;
+  animation: glide-loader 60s 0s linear infinite normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.loader__background {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  -webkit-animation: glide-background 80s 0s linear infinite normal;
+  -moz-animation: glide-background 80s 0s linear infinite normal;
+  -o-animation: glide-background 80s 0s linear infinite normal;
+  animation: glide-background 80s 0s linear infinite normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
 
 .filter__button__popup__graphic-two {
   background: url("../../graphics/sprite.png") transparent 13px -247px no-repeat;

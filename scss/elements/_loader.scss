@@ -1,0 +1,28 @@
+.loader {
+  overflow: hidden;
+}
+
+.loader__window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.loader__clouds {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+   @include animationKeyframe(glide-loader, 60s, $timing: $linear, $iteration-count: infinite);
+}
+
+.loader__background {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  @include animationKeyframe(glide-background, 80s, $timing: $linear, $iteration-count: infinite);
+}
