@@ -1,0 +1,12 @@
+.btn-close {
+  @include animate-object();
+  @include svg-bg(sprite, 25px -393px, $purple);
+  padding: 40px;
+  outline: 0;
+  box-shadow: inset 5px -5px 8px darken($purple, 5%);
+
+  &:hover {
+    background-color: darken($purple, 5%);
+    box-shadow: inset 5px -5px 8px darken($purple, 8%);
+  }
+}
