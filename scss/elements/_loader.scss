@@ -16,7 +16,7 @@
   right: 0;
   bottom: 0;
   top: 0;
-   @include animationKeyframe(glide-loader, 60s, $timing: $linear, $iteration-count: infinite);
+  @include animationKeyframe(glide-loader, 60s, $timing: $linear, $iteration-count: infinite);
 }
 
 .loader__background {
